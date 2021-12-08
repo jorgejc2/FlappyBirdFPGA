@@ -439,13 +439,12 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [3:0] state, state_n;
     always_ff@(posedge Clk or posedge Reset) begin
          if(Reset)
-            state <= 0;
+            state <= 3'b000;
          else begin
             state <= state_n;
          end
     end
     always_comb begin
-        state_n = 0;
         case(state)
         3'b000: begin //3 lives and no collisions
             if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
@@ -494,12 +493,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b101: begin //no lives
-        
+            state_n = 3'b101;
         end
+        default: state_n = 3'b000;
         endcase
-            HEART1_intact = 1'b1;
-            HEART2_intact = 1'b1;
-            HEART3_intact = 1'b1;
+            
         case(state)
         3'b000: begin //3 lives and no collisions
             HEART1_intact = 1'b1;
@@ -530,6 +528,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             HEART1_intact = 1'b0;
             HEART2_intact = 1'b0;
             HEART3_intact = 1'b0;
+        end
+        default: begin
+            HEART1_intact = 1'b1;
+            HEART2_intact = 1'b1;
+            HEART3_intact = 1'b1;
         end
         endcase
 
