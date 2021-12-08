@@ -312,6 +312,7 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 1 0 2021-12-07 22:07:26.011
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+<<<<<<< HEAD
 !SESSION 2021-12-07 23:32:00.815 -----------------------------------------------
 eclipse.buildId=4.5.2.M20160212-1500
 java.version=1.8.0_05
@@ -725,3 +726,17 @@ java.io.FileNotFoundException:
 
 !ENTRY org.eclipse.core.resources 4 567 2021-12-07 23:33:41.770
 !MESSAGE The project description file (.project) for 'usb_kb' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+=======
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-07 23:29:19.274
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-07 23:29:21.413
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-07 23:55:03.696
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-07 23:55:05.724
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+>>>>>>> 59dded30ba9c85a0f7a61164dc283011ca85b396
