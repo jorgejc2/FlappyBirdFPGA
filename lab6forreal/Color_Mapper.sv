@@ -47,8 +47,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic SCORE1_on;
     logic [10:0] SCORE1_x = 20;
     logic [10:0] SCORE1_y = 20;
-    logic [10:0] SCORE1_size_x = 8 *4;
-    logic [10:0] SCORE1_size_y = 16*4;
+    logic [10:0] SCORE1_size_x = 8 ;
+    logic [10:0] SCORE1_size_y = 16;
     logic SCORE2_on;
     logic [10:0] SCORE2_x = 60;
     logic [10:0] SCORE2_y = 20;
