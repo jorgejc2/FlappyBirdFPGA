@@ -19,6 +19,9 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     
     logic ball_on;
 
+    //for cloud sprites
+
+
     //logic for greenpipe1 sprite 
     logic greenpipe1_on;
     logic [10:0] greenpipe1_x = 300;
@@ -108,6 +111,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [2:0] HEART_data_out;
     logic [10:0] SCORE_ra;
     logic [7:0] SCORE_data_out;
+    logic [13:0] CLOUD_ra;
+    logic [2:0] CLOUD_data_out;
 
     // assign FP_ra = 50*(DrawY-greenpipe1_y) + (DrawX-greenpipe1_x);
     // assign FP_ra = 50*DrawY + DrawX;
@@ -117,6 +122,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     greenpipe1_frameRAM greenpipe1_frameRAM0(.read_address(GP1_ra), .data_Out(GP1_data_out));
     heart_frameRAM heart_frameRAM0 (.read_address(HEART_ra), .data_Out(HEART_data_out));
     font_rom font_rom0(.addr(SCORE_ra), .data(SCORE_data_out));
+    cloud_frameRAM cloud_frameRAM0(.read_address(CLOUD_ra), .data_Out(CLOUD_data_out));
 	 
  /* Old Ball: Generated square box by checking if the current pixel is within a square of length
     2*Ball_Size, centered at (BallX, BallY).  Note that this requires unsigned comparisons.
