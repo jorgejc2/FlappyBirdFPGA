@@ -1,0 +1,2169 @@
+14:48:56 **** Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+14:48:57 **** Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+14:49:00 **** Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:49:01 **** Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:49:02 **** Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:49:02 **** Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+14:49:15 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+14:49:15 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+14:49:16 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:49:19 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:49:20 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:49:20 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+14:50:04 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:53:39 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+14:53:39 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+14:53:40 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:53:43 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+14:53:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+14:53:44 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+14:53:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:18:35 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+15:18:36 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+15:18:37 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:18:40 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:18:40 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:18:41 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:18:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:21:26 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+15:21:27 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+15:21:27 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:21:30 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:21:31 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:21:32 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:21:36 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:35:22 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+15:35:23 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+15:35:24 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:35:27 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:35:27 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:35:28 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:35:32 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:44:29 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+15:44:30 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+15:44:30 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:44:33 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:44:34 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:44:35 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:44:41 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+15:44:42 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+15:44:43 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:44:46 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+15:44:46 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+15:44:47 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+15:44:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:07:38 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:07:39 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:07:39 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:07:42 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:07:43 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:07:44 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:07:47 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:11:43 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:11:43 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:11:44 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:11:47 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:11:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:11:49 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:11:52 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:16:45 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:16:45 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:16:46 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:16:49 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:16:50 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:16:50 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:16:54 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:23:32 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:23:33 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:23:33 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:23:36 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:23:37 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:23:38 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:23:41 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:28:12 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:28:12 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:28:13 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:28:16 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:28:17 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:28:17 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:28:24 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:35:21 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:35:21 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:35:22 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:35:25 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:35:26 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:35:26 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:35:53 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:35:53 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:35:54 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:35:57 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:35:58 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:35:58 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:36:03 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:40:29 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:40:30 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:40:31 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:40:34 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:40:34 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:40:35 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:40:40 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:44:06 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:44:07 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:44:08 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:44:11 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:44:11 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:44:12 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:44:16 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:47:08 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:47:09 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:47:09 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:47:12 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:47:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:47:14 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:47:47 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:47:47 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:47:48 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:47:51 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:47:52 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:47:53 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:48:08 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:46 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+16:55:46 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+16:55:47 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:55:50 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+16:55:51 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+16:55:52 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+16:55:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:23:56 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:23:57 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:23:58 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:24:01 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:24:02 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:24:02 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:24:15 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:24:15 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:24:16 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:24:19 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:24:20 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:24:20 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:24:24 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:27:22 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:27:23 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:27:23 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:27:26 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:27:27 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:27:28 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:27:30 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:31:40 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:31:40 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:31:41 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:31:44 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:31:45 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:31:45 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:31:49 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:35:56 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:35:57 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:35:57 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:36:00 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:36:01 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:36:02 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:36:23 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:36:24 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:36:25 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:36:28 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:36:29 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:36:29 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:36:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:41:00 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:41:00 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:41:01 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:41:04 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:41:05 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:41:06 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:41:11 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:41:12 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:41:13 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:41:16 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:41:16 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:41:17 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:41:21 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:44:31 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:44:31 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:44:32 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:44:35 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:44:36 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:44:37 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:44:39 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:49:38 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:49:39 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:49:40 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:49:43 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:49:43 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:49:44 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:49:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:53:39 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:53:39 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:53:40 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:53:43 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:53:44 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:53:45 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:53:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:56:28 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:56:29 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:56:29 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:56:32 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:56:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:56:34 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:56:52 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:56:52 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:56:53 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:56:56 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:56:57 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:56:58 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:57:30 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+17:57:31 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+17:57:32 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:57:35 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+17:57:35 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+17:57:36 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+17:57:40 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:06:00 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:06:01 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:06:01 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:06:04 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:06:05 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:06:06 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:06:11 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:10:49 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:10:50 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:10:50 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:10:53 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:10:54 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:10:55 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:10:58 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:15:15 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:15:16 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:15:16 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:15:19 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:15:20 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:15:21 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:15:25 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:20:50 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:20:50 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:20:51 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:20:54 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:20:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:20:55 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:20:59 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:24:33 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:24:33 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:24:34 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:24:37 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:24:38 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:24:38 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:24:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:29:00 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:29:01 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:29:02 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:29:05 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:29:06 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:29:06 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:29:12 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:42:35 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:42:36 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:42:36 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:42:39 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:42:40 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:42:41 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:42:46 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:48:16 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:48:16 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:48:17 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:48:20 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:48:21 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:48:21 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:48:26 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:59:38 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+18:59:39 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+18:59:40 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:59:43 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+18:59:43 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+18:59:44 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+18:59:48 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:07:46 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+19:07:47 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+19:07:48 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:07:51 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:07:51 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:07:52 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+19:07:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:25:13 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+19:25:14 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+19:25:15 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:25:18 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:25:18 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:25:19 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+19:25:24 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:30:08 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+19:30:08 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+19:30:09 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:30:12 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:30:13 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:30:13 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+19:30:17 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:34:46 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+19:34:46 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+19:34:47 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:34:50 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+19:34:51 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+19:34:52 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+19:34:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:04:15 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+21:04:16 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+21:04:16 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:04:19 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:04:20 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:04:21 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:04:25 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:11:01 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+21:11:02 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+21:11:03 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:11:06 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:11:06 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:11:07 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:11:11 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:39:33 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+21:39:34 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+21:39:35 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:39:38 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:39:38 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:39:39 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:39:42 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:54:30 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+21:54:31 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+21:54:31 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:54:34 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:54:35 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:54:36 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:54:39 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:57:18 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+21:57:19 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+21:57:20 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:57:23 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+21:57:23 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+21:57:24 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+21:57:28 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:03:18 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+22:03:19 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+22:03:19 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+22:03:22 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+22:03:23 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:03:24 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:03:27 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:07:12 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+22:07:13 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+22:07:13 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+22:07:16 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+22:07:17 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+22:07:18 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+22:07:22 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:29:07 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+23:29:08 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+23:29:11 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+23:29:12 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+23:29:12 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:29:13 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:29:17 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:54:50 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+23:54:51 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+23:54:51 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+23:54:54 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+23:54:55 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+23:54:56 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+23:55:01 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+00:01:23 **** Incremental Build of configuration Nios II for project lab61_app ****
+make all 
+Info: Building ../lab61_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+[lab61_app build complete]
+00:01:24 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+make all 
+makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
+Info: Building ../lab61_app1_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab61_app1_bsp/
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
+00:01:25 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+00:01:28 **** Incremental Build of configuration Nios II for project lab61_app_bsp ****
+make all 
+makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
+[BSP build complete]
+00:01:28 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
+00:01:29 **** Incremental Build of configuration Nios II for project usb_kb_bsp ****
+make all 
+[BSP build complete]
+00:01:33 **** Incremental Build of configuration Nios II for project usb_kb ****
+make all 
+Info: Building ../usb_kb_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../usb_kb_bsp/
+[BSP build complete]
+[usb_kb build complete]
