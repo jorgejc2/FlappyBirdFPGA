@@ -32,16 +32,20 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     assign x5 = 500;
     // assign CLOUD1_y = x1;
     // assign 
-    cloudMovements cloudMovements1(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size), .startX(x1), .startY(x1) );
-    cloudMovements cloudMovements2(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD2_x), .BallY(CLOUD2_y), .BallS(CLOUD2_size), .startX(x2), .startY(x2) );
-    cloudMovements cloudMovements3(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD3_x), .BallY(CLOUD3_y), .BallS(CLOUD3_size), .startX(x3), .startY(x1) );
-    cloudMovements cloudMovements4(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD4_x), .BallY(CLOUD4_y), .BallS(CLOUD4_size), .startX(x4), .startY(x2) );
-    cloudMovements cloudMovements5(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD5_x), .BallY(CLOUD5_y), .BallS(CLOUD5_size), .startX(x5), .startY(x1) );
+    // ball CLOUD1 (.Reset(Reset), .frame_clk(VGA_Clk), .keycode(), .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size));
+    // assign CLOUD1_x = 100;
+    // assign CLOUD1_y = 100;
+    // assign CLOUD1_size = 100;
+    cloudMovements cloudMovements1(.Reset(Reset), .frame_clk(VGA_Clk), .keycode(-1),
+               .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size));
+    // cloudMovements cloudMovements2(.Reset(Reset), .frame_clk(VGA_Clk),
+    //            .BallX(CLOUD2_x), .BallY(CLOUD2_y), .BallS(CLOUD2_size), .startX(x2), .startY(x2) );
+    // cloudMovements cloudMovements3(.Reset(Reset), .frame_clk(VGA_Clk),
+    //            .BallX(CLOUD3_x), .BallY(CLOUD3_y), .BallS(CLOUD3_size), .startX(x3), .startY(x1) );
+    // cloudMovements cloudMovements4(.Reset(Reset), .frame_clk(VGA_Clk),
+    //            .BallX(CLOUD4_x), .BallY(CLOUD4_y), .BallS(CLOUD4_size), .startX(x4), .startY(x2) );
+    // cloudMovements cloudMovements5(.Reset(Reset), .frame_clk(VGA_Clk),
+    //            .BallX(CLOUD5_x), .BallY(CLOUD5_y), .BallS(CLOUD5_size), .startX(x5), .startY(x1) );
 
 
 
@@ -235,7 +239,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= CLOUD1_y && DrawY < CLOUD1_y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
@@ -246,7 +250,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= CLOUD2_y && DrawY < CLOUD2_y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
@@ -257,7 +261,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= CLOUD3_y && DrawY < CLOUD3_y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
@@ -268,7 +272,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= CLOUD4_y && DrawY < CLOUD4_y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
@@ -279,7 +283,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= CLOUD5_y && DrawY < CLOUD5_y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
@@ -437,36 +441,6 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[FP_data_out][15:8];
             Blue = PALETTE[FP_data_out][7:0];
         end
-        else if ((CLOUD1_on == 1'b1) && CLOUD_data_out != 1) 
-        begin
-            Red = PALETTE[CLOUD_data_out][24:16];
-            Green = PALETTE[CLOUD_data_out][15:8];
-            Blue = PALETTE[CLOUD_data_out][7:0];
-        end
-        else if ((CLOUD2_on == 1'b1) && CLOUD_data_out != 1) 
-        begin
-            Red = PALETTE[CLOUD_data_out][24:16];
-            Green = PALETTE[CLOUD_data_out][15:8];
-            Blue = PALETTE[CLOUD_data_out][7:0];
-        end
-        else if ((CLOUD3_on == 1'b1) && CLOUD_data_out != 1) 
-        begin
-            Red = PALETTE[CLOUD_data_out][24:16];
-            Green = PALETTE[CLOUD_data_out][15:8];
-            Blue = PALETTE[CLOUD_data_out][7:0];
-        end
-        else if ((CLOUD4_on == 1'b1) && CLOUD_data_out != 1) 
-        begin
-            Red = PALETTE[CLOUD_data_out][24:16];
-            Green = PALETTE[CLOUD_data_out][15:8];
-            Blue = PALETTE[CLOUD_data_out][7:0];
-        end
-        else if ((CLOUD5_on == 1'b1) && CLOUD_data_out != 1) 
-        begin
-            Red = PALETTE[CLOUD_data_out][24:16];
-            Green = PALETTE[CLOUD_data_out][15:8];
-            Blue = PALETTE[CLOUD_data_out][7:0];
-        end
         else if (greenpipe1_on == 1'b1 && GP1_data_out != 1)
         begin
             Red = PALETTE[GP1_data_out][24:16];
@@ -548,12 +522,36 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[1][15:8];
             Blue = PALETTE[1][7:0];
         end       
-        // else if (SCORE1_on | SCORE2_on | SCORE3_on | SCORE4_on | SCORE5_on | SCORE6_on | SCORE7_on | SCORE8_on | SCORE9_on)
-        // begin
-        //     Red = 8'h00;
-        //     Green = 8'hff;
-        //     Blue = 8'hff;
-        // end
+        else if ((CLOUD1_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD2_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD3_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD4_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD5_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
         else
         begin 
             Red = 8'h00; 
