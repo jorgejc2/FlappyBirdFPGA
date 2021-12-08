@@ -14,6 +14,7 @@
 
 
 module  cloudMovements ( input Reset, frame_clk,
+                input [9:0] startX, startY,
                output [9:0]  BallX, BallY, BallS );
     
     logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
@@ -21,8 +22,8 @@ module  cloudMovements ( input Reset, frame_clk,
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    parameter [9:0] Ball_X_Center=100;  // Center position on the X axis
-    parameter [9:0] Ball_Y_Center=340;  // Center position on the Y axis
+    logic [9:0] Ball_X_Center=startX;  // Center position on the X axis
+    logic [9:0] Ball_Y_Center=startY;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
     parameter [9:0] Ball_Y_Min=250;       // Topmost point on the Y axis
