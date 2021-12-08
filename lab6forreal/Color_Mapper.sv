@@ -30,6 +30,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     assign x3 = 200;
     assign x4 = 350;
     assign x5 = 500;
+    // assign CLOUD1_y = x1;
+    // assign 
     cloudMovements cloudMovements1(.Reset(Reset), .frame_clk(VGA_Clk),
                .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size), .startX(x1), .startY(x1) );
     cloudMovements cloudMovements2(.Reset(Reset), .frame_clk(VGA_Clk),
@@ -71,8 +73,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic SCORE1_on;
     logic [10:0] SCORE1_x = 20;
     logic [10:0] SCORE1_y = 20;
-    logic [10:0] SCORE1_size_x = 8 *4;
-    logic [10:0] SCORE1_size_y = 16*4;
+    logic [10:0] SCORE1_size_x = 8 * 4 ;
+    logic [10:0] SCORE1_size_y = 16 * 4;
     logic SCORE2_on;
     logic [10:0] SCORE2_x = 60;
     logic [10:0] SCORE2_y = 20;
@@ -174,7 +176,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic HEART1_intact, HEART2_intact, HEART3_intact;
     always_comb begin:Ball_on_proc
     HEART_ra = 0;
-    ascii = 0;
+    ascii = 8'h30;
     SCORE_ra = 0;
     CLOUD_ra = 0;
 
@@ -331,7 +333,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         SCORE1_on = 1'b1;
         // SCORE_ra = ((SCORE1_size_x)/4)*((DrawY-SCORE1_y + 16*ascii)/4) + ((DrawX-SCORE1_x)/4);
-        SCORE_ra = 3;// (((DrawY-SCORE1_y))%16 + 16*ascii);
+        SCORE_ra = (((DrawY-SCORE1_y)/4)%16 + 16*ascii);;// (((DrawY-SCORE1_y))%16 + 16*ascii);
     end
     else if (DrawX >= SCORE2_x && DrawX < SCORE2_x + SCORE1_size_x &&
             DrawY >= SCORE2_y && DrawY < SCORE2_y + SCORE1_size_y)
@@ -489,7 +491,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[HEART_data_out][15:8];
             Blue = PALETTE[HEART_data_out][7:0];
         end       
-        else if ((SCORE1_on == 1'b1) && SCORE_data_out[DrawX - SCORE1_x] != 0) 
+        else if ((SCORE1_on == 1'b1) && SCORE_data_out[(DrawX - SCORE1_x)/4] != 0) 
         begin
             Red = PALETTE[5][24:16];
             Green = PALETTE[5][15:8];
