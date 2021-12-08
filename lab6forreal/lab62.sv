@@ -170,7 +170,7 @@ vga_controller vga0( .Clk(MAX10_CLK1_50), .Reset(Reset_h),.hs(VGA_HS),
 												  .sync(sync), .DrawX(drawxsig),     
 								              .DrawY(drawysig) );
 
-color_mapper color0(.VGA_Clk(VGA_Clk), .Blank(blank), .BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), .Ball_size(ballsizesig),
+color_mapper color0(.Clk(MAX10_CLK1_50), .Reset(Reset_h), .VGA_Clk(VGA_Clk), .Blank(blank), .BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), .Ball_size(ballsizesig),
 							.Red(Red), .Green(Green), .Blue(Blue) );
 
 

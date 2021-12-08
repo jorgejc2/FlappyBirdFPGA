@@ -198,8 +198,9 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         greenpipe1_on = 1'b0;
         ball_on = 1'b0;
-        if(HEART1_intact)
-        HEART1_on = 1'b1;
+        if(HEART1_intact) begin
+        HEART1_on = 1'b1; 
+        end
         else begin
             HEART1_on = 1'b0;
         end
@@ -213,8 +214,9 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         greenpipe1_on = 1'b0;
         ball_on = 1'b0;
         HEART1_on = 1'b0;
-        if(HEART2_intact)
+        if(HEART2_intact) begin
         HEART2_on = 1'b1;
+        end
         else begin
             HEART2_on = 1'b0;
         end
@@ -228,8 +230,9 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
-        if(HEART3_intact)
+        if(HEART3_intact) begin
         HEART3_on = 1'b1;
+        end
         else begin
             HEART3_on = 1'b0;
         end
@@ -447,8 +450,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     always_comb begin
         case(state)
         3'b000: begin //3 lives and no collisions
-            if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
-                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+            if(1)
             begin
                 state_n = 3'b001;
             end
