@@ -267,55 +267,55 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         SCORE1_on = 1'b1;
         // SCORE_ra = ((SCORE1_size_x)/4)*((DrawY-SCORE1_y + 16*ascii)/4) + ((DrawX-SCORE1_x)/4);
-        SCORE_ra = (((DrawY-SCORE1_y)) + 16*ascii);
+        SCORE_ra = 3;// (((DrawY-SCORE1_y))%16 + 16*ascii);
     end
     else if (DrawX >= SCORE2_x && DrawX < SCORE2_x + SCORE1_size_x &&
             DrawY >= SCORE2_y && DrawY < SCORE2_y + SCORE1_size_y)
     begin
         SCORE2_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE2_y + 16*ascii) + (DrawX-SCORE2_x);
+        SCORE_ra = 3; //((SCORE1_size_x)/4)*(DrawY-SCORE2_y + 16*ascii) + (DrawX-SCORE2_x);
     end
     else if (DrawX >= SCORE3_x && DrawX < SCORE3_x + SCORE1_size_x &&
             DrawY >= SCORE3_y && DrawY < SCORE3_y + SCORE1_size_y)
     begin
         SCORE3_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE3_y + 16*ascii) + (DrawX-SCORE3_x);
+        SCORE_ra = 3; //((SCORE1_size_x)/4)*(DrawY-SCORE3_y + 16*ascii) + (DrawX-SCORE3_x)
     end
     else if (DrawX >= SCORE4_x && DrawX < SCORE4_x + SCORE1_size_x &&
             DrawY >= SCORE4_y && DrawY < SCORE4_y + SCORE1_size_y)
     begin
         SCORE4_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE4_y + 16*ascii) + (DrawX-SCORE4_x);
+        SCORE_ra = 3;
     end
     else if (DrawX >= SCORE5_x && DrawX < SCORE5_x + SCORE1_size_x &&
             DrawY >= SCORE5_y && DrawY < SCORE5_y + SCORE1_size_y)
     begin
         SCORE5_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE5_y + 16*ascii) + (DrawX-SCORE5_x);
+        SCORE_ra = 3;
     end
     else if (DrawX >= SCORE6_x && DrawX < SCORE6_x + SCORE1_size_x &&
             DrawY >= SCORE6_y && DrawY < SCORE6_y + SCORE1_size_y)
     begin
         SCORE6_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE6_y + 16*ascii) + (DrawX-SCORE6_x);
+        SCORE_ra = 3;
     end
     else if (DrawX >= SCORE7_x && DrawX < SCORE7_x + SCORE1_size_x &&
             DrawY >= SCORE7_y && DrawY < SCORE7_y + SCORE1_size_y)
     begin
         SCORE7_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE7_y + 16*ascii) + (DrawX-SCORE7_x);
+        SCORE_ra = 3;
     end
     else if (DrawX >= SCORE8_x && DrawX < SCORE8_x + SCORE1_size_x &&
             DrawY >= SCORE8_y && DrawY < SCORE8_y + SCORE1_size_y)
     begin
         SCORE8_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE8_y + 16*ascii) + (DrawX-SCORE8_x);
+        SCORE_ra = 3;
     end
     else if (DrawX >= SCORE9_x && DrawX < SCORE9_x + SCORE1_size_x &&
             DrawY >= SCORE9_y && DrawY < SCORE9_y + SCORE1_size_y)
     begin
         SCORE9_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*(DrawY-SCORE9_y + 16*ascii) + (DrawX-SCORE9_x);
+        SCORE_ra =  3;
     end
     else begin
         greenpipe1_on = 1'b0;
