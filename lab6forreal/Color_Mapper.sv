@@ -450,7 +450,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     always_comb begin
         case(state)
         3'b000: begin //3 lives and no collisions
-            if(1)
+            if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
+                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
             begin
                 state_n = 3'b001;
             end
@@ -467,8 +468,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b010: begin //2 lives and no collisions
-            if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
-                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+            if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
+                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
             begin
                 state_n = 3'b011;
             end
@@ -485,8 +486,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b100: begin //1 life and no collisions
-        if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
-                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+        if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
+                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
             begin
                 state_n = 3'b101;
             end

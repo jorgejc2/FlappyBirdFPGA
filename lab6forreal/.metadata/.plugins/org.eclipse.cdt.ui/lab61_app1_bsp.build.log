@@ -1,7 +1,7 @@
-00:24:21 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
+00:47:50 **** Incremental Build of configuration Nios II for project lab61_app1_bsp ****
 make all 
 makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
 [BSP build complete]
 
-00:24:24 Build Finished (took 2s.880ms)
+00:47:51 Build Finished (took 628ms)
 
