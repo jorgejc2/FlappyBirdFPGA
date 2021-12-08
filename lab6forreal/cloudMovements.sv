@@ -22,14 +22,16 @@ module  cloudMovements ( input Reset, frame_clk,
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    logic [9:0] Ball_X_Center=startX;  // Center position on the X axis
-    logic [9:0] Ball_Y_Center=startY;  // Center position on the Y axis
+    logic [9:0] Ball_X_Center;  // Center position on the X axis
+    logic [9:0] Ball_Y_Center;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
     parameter [9:0] Ball_Y_Min=250;       // Topmost point on the Y axis
     parameter [9:0] Ball_Y_Max=479;     // Bottommost point on the Y axis
     parameter [9:0] Ball_X_Step=1;      // Step size on the X axis
     parameter [9:0] Ball_Y_Step=1;      // Step size on the Y axis
+    assign Ball_X_Center=startX;
+    assign Ball_Y_Center=startY;
 
     assign Ball_Size = 100;  // assigns the value 4 as a 10-digit binary number, ie "0000000100"
    
