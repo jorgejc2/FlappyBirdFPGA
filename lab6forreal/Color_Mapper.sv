@@ -395,7 +395,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[HEART_data_out][15:8];
             Blue = PALETTE[HEART_data_out][7:0];
         end       
-        else if ((SCORE1_on == 1'b1) && SCORE_data_out[DrawX - SCORE1_x] != 0) 
+        else if ((SCORE1_on == 1'b1) && SCORE_data_out != 0) 
         begin
             Red = PALETTE[5][24:16];
             Green = PALETTE[5][15:8];
