@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 7, 2021 11:29:05 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1638941345354</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 7, 2021 11:54:46 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1638942886605</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\JorgeC\OneDrive\Documents\385Labs\Lab6Flappy\lab6forreal\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab62soc.sopcinfo</SopcDesignFile>
