@@ -226,7 +226,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             DrawY >= SCORE1_y && DrawY < SCORE1_y + SCORE1_size_y)
     begin
         SCORE1_on = 1'b1;
-        SCORE_ra = ((SCORE1_size_x)/4)*((DrawY-SCORE1_y + 16*ascii)/4) + ((DrawX-SCORE1_x)/4);
+        // SCORE_ra = ((SCORE1_size_x)/4)*((DrawY-SCORE1_y + 16*ascii)/4) + ((DrawX-SCORE1_x)/4);
+        SCORE_ra = (((DrawY-SCORE1_y)/4) + 16*ascii)
     end
     else if (DrawX >= SCORE2_x && DrawX < SCORE2_x + SCORE1_size_x &&
             DrawY >= SCORE2_y && DrawY < SCORE2_y + SCORE1_size_y)
@@ -303,7 +304,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic[2:0] score_pos;
     always_comb
     begin:RGB_Display
-        score_pos = (DrawX - SCORE1_x)%4;
+        score_pos = (DrawX - SCORE1_x)/4;
         if(!Blank) begin
             Red = 4'b0000;
             Green = 4'b0000;
@@ -360,7 +361,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[1][15:8];
             Blue = PALETTE[1][7:0];
         end       
-        else if ((SCORE2_on == 1'b1) && SCORE_data_out != 0) 
+        else if ((SCORE2_on == 1'b1) && SCORE_data_out[score_pos] != 0) 
         begin
             Red = PALETTE[1][24:16];
             Green = PALETTE[1][15:8];
