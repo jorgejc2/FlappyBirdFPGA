@@ -243,7 +243,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         SCORE1_on = 1'b1;
         // SCORE_ra = ((SCORE1_size_x)/4)*((DrawY-SCORE1_y + 16*ascii)/4) + ((DrawX-SCORE1_x)/4);
-        SCORE_ra = (((DrawY-SCORE1_y)) + 16*ascii);
+        SCORE_ra = 3;//(((DrawY-SCORE1_y)) + 16*ascii);
     end
     else if (DrawX >= SCORE2_x && DrawX < SCORE2_x + SCORE1_size_x &&
             DrawY >= SCORE2_y && DrawY < SCORE2_y + SCORE1_size_y)
