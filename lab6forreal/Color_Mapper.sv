@@ -14,7 +14,7 @@
 
 
 module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
-                        input VGA_Clk, Blank,
+                        input VGA_Clk, Blank, Clk, Reset,
                        output logic [7:0]  Red, Green, Blue );
     
     logic ball_on;
@@ -144,6 +144,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     //         ball_on = 1'b0;
     //  end 
     logic [5:0] ascii;
+    logic HEART1_intact, HEART2_intact, HEART3_intact;
     always_comb begin:Ball_on_proc
     HEART_ra = 0;
     ascii = 0;
@@ -197,7 +198,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         greenpipe1_on = 1'b0;
         ball_on = 1'b0;
+        if(HEART1_intact)
         HEART1_on = 1'b1;
+        else begin
+            HEART1_on = 1'b0;
+        end
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         HEART_ra = HEART1_size_x*(DrawY-HEART1_y) + (DrawX-HEART1_x);
@@ -208,7 +213,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         greenpipe1_on = 1'b0;
         ball_on = 1'b0;
         HEART1_on = 1'b0;
+        if(HEART2_intact)
         HEART2_on = 1'b1;
+        else begin
+            HEART2_on = 1'b0;
+        end
         HEART3_on = 1'b0;
         HEART_ra = HEART2_size_x*(DrawY-HEART2_y) + (DrawX-HEART2_x);
     end
@@ -219,7 +228,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
+        if(HEART3_intact)
         HEART3_on = 1'b1;
+        else begin
+            HEART3_on = 1'b0;
+        end
         HEART_ra = HEART3_size_x*(DrawY-HEART3_y) + (DrawX-HEART3_x);
     end
     else if (DrawX >= SCORE1_x && DrawX < SCORE1_x + SCORE1_size_x &&
@@ -420,6 +433,105 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = 8'h00;
             Blue = 8'hff;// - DrawX[9:3];
         end      
+    end 
+
+    logic [3:0] state, state_n;
+    always_ff@(posedge Clk or posedge Reset) begin
+         if(Reset)
+            state <= 0;
+         else begin
+            state <= state_n;
+         end
+    end
+    always_comb begin
+        state_n = 0;
+        case(state)
+        3'b000: begin //3 lives and no collisions
+            if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
+                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+            begin
+                state_n = 3'b001;
+            end
+            else begin
+                state_n = 3'b000;
+            end
+        end
+        3'b001: begin //lost first life and middle of collision
+            if(BallX > (greenpipe1_x + greenpipe1_size_x))begin
+                state_n = 3'b010;
+            end
+            else begin
+                state_n = 3'b001;
+            end
+        end
+        3'b010: begin //2 lives and no collisions
+            if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
+                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+            begin
+                state_n = 3'b011;
+            end
+            else begin
+                state_n = 3'b011;
+            end
+        end
+        3'b011: begin //lost second life and middle of collision
+            if(BallX > (greenpipe1_x + greenpipe1_size_x))begin
+                state_n = 3'b100;
+            end
+            else begin
+                state_n = 3'b011;
+            end
+        end
+        3'b100: begin //1 life and no collisions
+        if(BallX < (greenpipe1_x + greenpipe1_size_x) && BallX > greenpipe1_x &&
+                BallY < (greenpipe1_y + greenpipe1_size_y) && BallY > greenpipe1_y)
+            begin
+                state_n = 3'b101;
+            end
+            else begin
+                state_n = 3'b100;
+            end
+        end
+        3'b101: begin //no lives
+        
+        end
+        endcase
+            HEART1_intact = 1'b1;
+            HEART2_intact = 1'b1;
+            HEART3_intact = 1'b1;
+        case(state)
+        3'b000: begin //3 lives and no collisions
+            HEART1_intact = 1'b1;
+            HEART2_intact = 1'b1;
+            HEART3_intact = 1'b1;
+        end
+        3'b001: begin //lost first life and middle of collision
+            HEART1_intact = 1'b0;
+            HEART2_intact = 1'b1;
+            HEART3_intact = 1'b1;
+        end
+        3'b010: begin //2 lives and no collisions
+            HEART1_intact = 1'b0;
+            HEART2_intact = 1'b1;
+            HEART3_intact = 1'b1;
+        end
+        3'b011: begin //lost second life and middle of collision
+            HEART1_intact = 1'b0;
+            HEART2_intact = 1'b0;
+            HEART3_intact = 1'b1;
+        end
+        3'b100: begin //1 life and no collisions
+            HEART1_intact = 1'b0;
+            HEART2_intact = 1'b0;
+            HEART3_intact = 1'b1;
+        end
+        3'b101: begin //no lives
+            HEART1_intact = 1'b0;
+            HEART2_intact = 1'b0;
+            HEART3_intact = 1'b0;
+        end
+        endcase
+
     end 
     
 endmodule
