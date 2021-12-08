@@ -1,4 +1,4 @@
-00:53:57 **** Incremental Build of configuration Nios II for project lab61_app1 ****
+01:11:07 **** Incremental Build of configuration Nios II for project lab61_app1 ****
 make all 
 makefile:759: warning: overriding commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
 makefile:756: warning: ignoring old commands for target `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'
@@ -8,5 +8,5 @@ makefile:529: Warning: SOPC File ../../lab61soc.sopcinfo could not be found.
 [BSP build complete]
 make: *** No rule to make target `.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp', needed by `obj/default/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o'.  Stop.
 
-00:53:58 Build Finished (took 677ms)
+01:11:08 Build Finished (took 677ms)
 

@@ -20,6 +20,24 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic ball_on;
 
     //for cloud sprites
+    logic [9:0] CLOUD1_x, CLOUD1_y ,CLOUD1_size, CLOUD2_x, CLOUD2_y ,CLOUD2_size ,CLOUD3_x ,CLOUD3_y  ,CLOUD3_size, CLOUD4_x ,
+    CLOUD4_y ,CLOUD4_size,
+    CLOUD5_x ,CLOUD5_y,CLOUD5_size;
+    cloudMovements cloudMovements1(.Reset(Reset), .frame_clk(VGA_Clk),
+               .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size) );
+    
+    cloudMovements cloudMovements2(.Reset(Reset), .frame_clk(VGA_Clk),
+               .BallX(CLOUD2_x), .BallY(CLOUD2_y), .BallS(CLOUD2_size) );
+
+    cloudMovements cloudMovements3(.Reset(Reset), .frame_clk(VGA_Clk),
+               .BallX(CLOUD3_x), .BallY(CLOUD3_y), .BallS(CLOUD3_size) );
+
+    cloudMovements cloudMovements4(.Reset(Reset), .frame_clk(VGA_Clk),
+               .BallX(CLOUD4_x), .BallY(CLOUD4_y), .BallS(CLOUD4_size) );
+
+    cloudMovements cloudMovements5(.Reset(Reset), .frame_clk(VGA_Clk),
+               .BallX(CLOUD5_x), .BallY(CLOUD5_y), .BallS(CLOUD5_size) );
+
 
 
     //logic for greenpipe1 sprite 
