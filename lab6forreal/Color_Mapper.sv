@@ -15,8 +15,8 @@
 
 module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
                         input VGA_Clk, Blank, Clk, Reset,
-                       output logic [7:0]  Red, Green, Blue );
-    
+                       output logic [7:0]  Red, Green, Blue, eightOut );
+    assign eightOut = SCORE_data_out;
     logic ball_on, CLOUD1_on, CLOUD2_on, CLOUD3_on, CLOUD4_on, CLOUD5_on;
 
     //for cloud sprites

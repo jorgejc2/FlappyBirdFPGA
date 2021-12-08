@@ -153,7 +153,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 		
 		//LEDs and HEX
 		.hex_digits_export({hex_num_4, hex_num_3, hex_num_1, hex_num_0}),
-		.leds_export({hundreds, signs, LEDR}),
+		// .leds_export({hundreds, signs, LEDR}),
 		.keycode_export(keycode)
 		
 	 );
@@ -171,7 +171,7 @@ vga_controller vga0( .Clk(MAX10_CLK1_50), .Reset(Reset_h),.hs(VGA_HS),
 								              .DrawY(drawysig) );
 
 color_mapper color0(.Clk(MAX10_CLK1_50), .Reset(Reset_h), .VGA_Clk(VGA_Clk), .Blank(blank), .BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), .Ball_size(ballsizesig),
-							.Red(Red), .Green(Green), .Blue(Blue) );
+							.Red(Red), .Green(Green), .Blue(Blue), .eightOut(LEDR[7:0]));
 
 
 endmodule
