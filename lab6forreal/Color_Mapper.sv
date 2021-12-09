@@ -685,7 +685,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
          
     end
     always_comb begin
-        if(counter == 20'hfffff && BallY > 477) begin
+        if(counter == 20'hfffff && BallY > 430 && HEART3_intact) begin
             score_n = score+1;
 				counter_n = 0;
 				end
