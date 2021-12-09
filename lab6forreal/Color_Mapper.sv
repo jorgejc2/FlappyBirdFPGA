@@ -632,12 +632,36 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[1][15:8];
             Blue = PALETTE[1][7:0];
         end       
-        // else if (SCORE1_on | SCORE2_on | SCORE3_on | SCORE4_on | SCORE5_on | SCORE6_on | SCORE7_on | SCORE8_on | SCORE9_on)
-        // begin
-        //     Red = 8'h00;
-        //     Green = 8'hff;
-        //     Blue = 8'hff;
-        // end
+        else if ((CLOUD1_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD2_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD3_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD4_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
+        else if ((CLOUD5_on == 1'b1) && CLOUD_data_out != 1) 
+        begin
+            Red = PALETTE[CLOUD_data_out][24:16];
+            Green = PALETTE[CLOUD_data_out][15:8];
+            Blue = PALETTE[CLOUD_data_out][7:0];
+        end
         else
         begin 
             Red = 8'h00; 
@@ -661,7 +685,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
          
     end
     always_comb begin
-			if(counter == 20'hfffff) begin
+        if(counter == 20'hfffff && BallY > 477) begin
             score_n = score+1;
 				counter_n = 0;
 				end
