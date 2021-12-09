@@ -13,20 +13,17 @@
 //-------------------------------------------------------------------------
 
 
-module  cloudMovements ( input Reset, frame_clk,
+module  greenpipe2 ( input Reset, frame_clk,
 					input [7:0] keycode,
-					input [9:0] startX, startY,
-               output [9:0]  BallX, BallY, BallS  );
+               output [9:0]  BallX, BallY, BallS );
     
     logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
 
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    logic [9:0] Ball_X_Center;  // Center position on the X axis
-    logic [9:0] Ball_Y_Center;  // Center position on the Y axis
-	assign Ball_X_Center = startX;
-	assign Ball_Y_Center = startY;
+    parameter [9:0] Ball_X_Center=420;  // Center position on the X axis
+    parameter [9:0] Ball_Y_Center=380;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
     parameter [9:0] Ball_Y_Min=0;       // Topmost point on the Y axis
@@ -121,7 +118,7 @@ module  cloudMovements ( input Reset, frame_clk,
 			Ball_Y_Motion_Next = Ball_Y_Motion;
 			
 				 if ( (Ball_Y_Pos + Ball_Size) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
-					  Ball_Y_Motion_Next = (~ (Ball_Y_Step) + 1'b1);  // 2's complement.
+					  Ball_Y_Motion_Next = 0;  // 2's complement.
 					  
 				 else if ( (Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
 					  Ball_Y_Motion_Next = Ball_Y_Step;
@@ -165,7 +162,7 @@ module  cloudMovements ( input Reset, frame_clk,
 					8'h16 : begin
 							if ( (Ball_Y_Pos + Ball_Size) >= Ball_Y_Max )
 							begin
-							Ball_Y_Motion_Next = (~ (Ball_Y_Step) + 1'b1);
+							Ball_Y_Motion_Next = 0;
 							end
 							else begin
 							Ball_Y_Motion_Next = 1;//S
@@ -174,7 +171,7 @@ module  cloudMovements ( input Reset, frame_clk,
 					        
 							 end
 							  
-					8'h1A : begin
+					8'h1A : begin //when game logic is done, comment out every case but this one
 							if((Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )
 							begin
 								Ball_Y_Motion_Next = Ball_Y_Step;
@@ -182,16 +179,16 @@ module  cloudMovements ( input Reset, frame_clk,
 							end
 							
 							else begin
-							Ball_Y_Motion_Next = -1;//W
+							Ball_Y_Motion_Next = -3;//W
 							  Ball_X_Motion_Next = 0;	
 							end
 					        
 							 end	  
 					default: ;
-					//begin
-					//	Ball_X_Motion_Next = Ball_X_Motion;
-					//	Ball_Y_Motion_Next = Ball_Y_Motion;
-					//end
+					// begin
+					// 	Ball_X_Motion_Next = Ball_X_Motion;
+					// 	Ball_Y_Motion_Next = Ball_Y_Motion;
+					// end
 			   endcase
 
 			Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position

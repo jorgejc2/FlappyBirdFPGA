@@ -68,7 +68,11 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 	logic [3:0] hex_num_4, hex_num_3, hex_num_1, hex_num_0; //4 bit input hex digits
 	logic [1:0] signs;
 	logic [1:0] hundreds;
-	logic [9:0] drawxsig, drawysig, ballxsig, ballysig, ballsizesig;
+	logic [9:0] drawxsig, drawysig, ballxsig, ballysig, ballsizesig, greenpipe1_x, greenpipe1_y,greenpipe2_x, greenpipe2_y,
+	greenpipe3_x, greenpipe3_y,
+	CLOUD1_x, CLOUD1_y , CLOUD2_x, CLOUD2_y  ,CLOUD3_x ,CLOUD3_y  , CLOUD4_x ,
+    CLOUD4_y ,
+    CLOUD5_x ,CLOUD5_y;
 	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
 
@@ -158,7 +162,14 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
 		
 	 );
 
-
+logic [9:0] x1, y1, x2, y2, x3, x4, x5;
+    assign x1 = 50;
+    assign y1 = 200;
+	assign y2 = 100;
+    assign x2 = 200;
+    assign x3 = 350;
+    assign x4 = 500;
+    assign x5 = 600;
 //instantiate a vga_controller, ball, and color_mapper here with the ports.
 
 ball ball0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(keycode),.BallX(ballxsig), .BallY(ballysig), .BallS(ballsizesig) );
@@ -170,8 +181,33 @@ vga_controller vga0( .Clk(MAX10_CLK1_50), .Reset(Reset_h),.hs(VGA_HS),
 												  .sync(sync), .DrawX(drawxsig),     
 								              .DrawY(drawysig) );
 
-color_mapper color0(.Clk(MAX10_CLK1_50), .Reset(Reset_h), .VGA_Clk(VGA_Clk), .Blank(blank), .BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), .Ball_size(ballsizesig),
-							.Red(Red), .Green(Green), .Blue(Blue), .eightOut(LEDR[7:0]));
+color_mapper color0(.Clk(MAX10_CLK1_50), .Reset(Reset_h), .VGA_Clk(VGA_VS), .Blank(blank), .BallX(ballxsig), .BallY(ballysig), .DrawX(drawxsig), .DrawY(drawysig), .Ball_size(ballsizesig),
+							.Red(Red), .Green(Green), .Blue(Blue), .eightOut(LEDR[7:0]), .keycode(keycode), 
+							.pipe1X(greenpipe1_x), .pipe1Y(greenpipe1_y), .pipe2X(greenpipe2_x), .pipe2Y(greenpipe2_y),
+							.pipe3X(greenpipe3_x), .pipe3Y(greenpipe3_y),
+							.cloud1X(CLOUD1_x), .cloud1Y(CLOUD1_y), 
+							.cloud2X(CLOUD2_x), .cloud2Y(CLOUD2_y), 
+							.cloud3X(CLOUD3_x), .cloud3Y(CLOUD3_y), 
+							.cloud4X(CLOUD4_x), .cloud4Y(CLOUD4_y), 
+							.cloud5X(CLOUD5_x), .cloud5Y(CLOUD5_y) 
+							);
 
+greenpipe1 greenpipe1_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe1_x),
+    .BallY(greenpipe1_y), .BallS() );
+greenpipe2 greenpipe2_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe2_x),
+.BallY(greenpipe2_y), .BallS() );
+greenpipe3 greenpipe3_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe3_x),
+.BallY(greenpipe3_y), .BallS() );
+
+cloudMovements cloudMovements1(.Reset(Reset_h), .frame_clk(VGA_VS),
+               .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(), .startX(x1), .startY(y1), .keycode(8'h04) );
+    cloudMovements cloudMovements2(.Reset(Reset_h), .frame_clk(VGA_VS),
+               .BallX(CLOUD2_x), .BallY(CLOUD2_y), .BallS(), .startX(x2), .startY(y2), .keycode(8'h04) );
+    cloudMovements cloudMovements3(.Reset(Reset_h), .frame_clk(VGA_VS),
+               .BallX(CLOUD3_x), .BallY(CLOUD3_y), .BallS(), .startX(x3), .startY(y1), .keycode(8'h04) );
+    cloudMovements cloudMovements4(.Reset(Reset_h), .frame_clk(VGA_VS),
+               .BallX(CLOUD4_x), .BallY(CLOUD4_y), .BallS(), .startX(x4), .startY(y2), .keycode(8'h04) );
+    cloudMovements cloudMovements5(.Reset(Reset_h), .frame_clk(VGA_VS),
+               .BallX(CLOUD5_x), .BallY(CLOUD5_y), .BallS(), .startX(x5), .startY(y1), .keycode(8'h04) );
 
 endmodule

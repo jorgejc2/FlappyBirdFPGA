@@ -13,44 +13,41 @@
 //-------------------------------------------------------------------------
 
 
-module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
+module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size, pipe1X, pipe1Y,
+                         pipe2X, pipe2Y,
+							pipe3X, pipe3Y,
+							cloud1X, cloud1Y, 
+							cloud2X, cloud2Y, 
+							cloud3X, cloud3Y, 
+							cloud4X, cloud4Y, 
+							cloud5X, cloud5Y, 
                         input VGA_Clk, Blank, Clk, Reset,
-                       output logic [7:0]  Red, Green, Blue, eightOut );
+                       output logic [7:0]  Red, Green, Blue, eightOut, 
+                       input [7:0] keycode );
     assign eightOut = SCORE_data_out;
     logic ball_on, CLOUD1_on, CLOUD2_on, CLOUD3_on, CLOUD4_on, CLOUD5_on;
+    
+    logic [10:0] CLOUD1_size = 100;
 
-    //for cloud sprites
-    logic [9:0] CLOUD1_x, CLOUD1_y ,CLOUD1_size, CLOUD2_x, CLOUD2_y ,CLOUD2_size ,CLOUD3_x ,CLOUD3_y  ,CLOUD3_size, CLOUD4_x ,
-    CLOUD4_y ,CLOUD4_size,
-    CLOUD5_x ,CLOUD5_y,CLOUD5_size;
-    logic [9:0] x1, y1, x2, y2, x3, x4, x5;
-    assign x1 = 50;
-    assign y1 = 100;
-    assign x2 = 50;
-    assign x3 = 200;
-    assign x4 = 350;
-    assign x5 = 500;
-    // assign CLOUD1_y = x1;
-    // assign 
-    cloudMovements cloudMovements1(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(CLOUD1_size), .startX(x1), .startY(x1) );
-    cloudMovements cloudMovements2(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD2_x), .BallY(CLOUD2_y), .BallS(CLOUD2_size), .startX(x2), .startY(x2) );
-    cloudMovements cloudMovements3(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD3_x), .BallY(CLOUD3_y), .BallS(CLOUD3_size), .startX(x3), .startY(x1) );
-    cloudMovements cloudMovements4(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD4_x), .BallY(CLOUD4_y), .BallS(CLOUD4_size), .startX(x4), .startY(x2) );
-    cloudMovements cloudMovements5(.Reset(Reset), .frame_clk(VGA_Clk),
-               .BallX(CLOUD5_x), .BallY(CLOUD5_y), .BallS(CLOUD5_size), .startX(x5), .startY(x1) );
-
-
+    //logic for greenpipe1 sprite 
+    logic greenpipe2_on;
+    logic [10:0] greenpipe2_size_x = 50;
+    logic [10:0] greenpipe2_size_y = 100;
 
     //logic for greenpipe1 sprite 
     logic greenpipe1_on;
-    logic [10:0] greenpipe1_x = 300;
-    logic [10:0] greenpipe1_y = 380;
     logic [10:0] greenpipe1_size_x = 50;
     logic [10:0] greenpipe1_size_y = 100;
+    // assign pipe1X = pipe1X;
+    // assign pipe1Y = pipe1Y;
+
+    //logic for greenpipe1 sprite 
+    logic greenpipe3_on;
+
+    logic [10:0] greenpipe3_size_x = 50;
+    logic [10:0] greenpipe3_size_y = 100;
+
+
 
     //logic for hearts 1-3
     logic HEART1_on;
@@ -130,6 +127,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [2:0] FP_data_out;
     logic [12:0] GP1_ra;
     logic [2:0] GP1_data_out;
+    logic [12:0] GP2_ra;
+    logic [12:0] GP3_ra;
     logic [11:0] HEART_ra;
     logic [2:0] HEART_data_out;
     logic [10:0] SCORE_ra;
@@ -137,12 +136,18 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [13:0] CLOUD_ra;
     logic [2:0] CLOUD_data_out;
 
-    // assign FP_ra = 50*(DrawY-greenpipe1_y) + (DrawX-greenpipe1_x);
+    // assign FP_ra = 50*(DrawY-pipe1Y) + (DrawX-pipe1X);
     // assign FP_ra = 50*DrawY + DrawX;
+    // assign pipe1X = pipe1X;
+    // assign pipe1Y = pipe1Y;
     assign FP_ra = Ball_size*(DrawY-BallY) + (DrawX-BallX);
-    assign GP1_ra = greenpipe1_size_x*(DrawY-greenpipe1_y) + (DrawX-greenpipe1_x);
+    // assign GP1_ra = greenpipe1_size_x*(DrawY-pipe1Y) + (DrawX-pipe1X);
+    // assign GP2_ra = greenpipe2_size_x*(DrawY-pipe2Y) + (DrawX-pipe2X);
+    // assign GP3_ra = greenpipe3_size_x*(DrawY-pipe3Y) + (DrawX-pipe3X);
     frameRAM frameRAM0 (.read_address(FP_ra), .data_Out(FP_data_out));
     greenpipe1_frameRAM greenpipe1_frameRAM0(.read_address(GP1_ra), .data_Out(GP1_data_out));
+    // greenpipe1_frameRAM greenpipe1_frameRAM1(.read_address(GP2_ra), .data_Out(GP1_data_out));
+    // greenpipe1_frameRAM greenpipe1_frameRAM2(.read_address(GP3_ra), .data_Out(GP1_data_out));
     heart_frameRAM heart_frameRAM0 (.read_address(HEART_ra), .data_Out(HEART_data_out));
     font_rom font_rom0(.addr(SCORE_ra), .data(SCORE_data_out));
     cloud_frameRAM cloud_frameRAM0(.read_address(CLOUD_ra), .data_Out(CLOUD_data_out));
@@ -182,8 +187,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 
     SCORE_ra = 0;
     CLOUD_ra = 0;
+    GP1_ra = 0;
 
-    greenpipe1_on = 1'b0;
     ball_on = 1'b0;
     HEART1_on = 1'b0;
     HEART2_on = 1'b0;
@@ -202,21 +207,70 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     CLOUD3_on = 0;
     CLOUD4_on = 0;
     CLOUD5_on = 0;
-    if (DrawX >= greenpipe1_x && DrawX < greenpipe1_x + greenpipe1_size_x && 
-        DrawY >= greenpipe1_y && DrawY < greenpipe1_y + greenpipe1_size_y &&
+    greenpipe1_on = 0;
+    greenpipe2_on = 0;
+    greenpipe3_on = 0;
+    if (DrawX >= pipe1X && DrawX < pipe1X + greenpipe1_size_x && 
+        DrawY >= pipe1Y && DrawY < pipe1Y + greenpipe1_size_y &&
         DrawX >= BallX && DrawX < BallX + Ball_size &&
             DrawY >= BallY && DrawY < BallY + Ball_size)
     begin
         greenpipe1_on = 1'b1;
+        GP1_ra = greenpipe1_size_x*(DrawY-pipe1Y) + (DrawX-pipe1X);
         ball_on = 1'b1;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
     end
-    else if(DrawX >= greenpipe1_x && DrawX < greenpipe1_x + greenpipe1_size_x && 
-        DrawY >= greenpipe1_y && DrawY < greenpipe1_y + greenpipe1_size_y)
+    else if (DrawX >= pipe2X && DrawX < pipe2X + greenpipe2_size_x && 
+        DrawY >= pipe2Y && DrawY < pipe2Y + greenpipe2_size_y &&
+        DrawX >= BallX && DrawX < BallX + Ball_size &&
+            DrawY >= BallY && DrawY < BallY + Ball_size)
+    begin
+        greenpipe2_on = 1'b1;
+        GP1_ra = greenpipe2_size_x*(DrawY-pipe2Y) + (DrawX-pipe2X);
+        ball_on = 1'b1;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
+    else if (DrawX >= pipe3X && DrawX < pipe3X + greenpipe3_size_x && 
+        DrawY >= pipe3Y && DrawY < pipe3Y + greenpipe3_size_y &&
+        DrawX >= BallX && DrawX < BallX + Ball_size &&
+            DrawY >= BallY && DrawY < BallY + Ball_size)
+    begin
+        greenpipe3_on = 1'b1;
+        GP1_ra = greenpipe3_size_x*(DrawY-pipe3Y) + (DrawX-pipe3X);
+        ball_on = 1'b1;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
+    else if(DrawX >= pipe1X && DrawX < pipe1X + greenpipe1_size_x && 
+        DrawY >= pipe1Y && DrawY < pipe1Y + greenpipe1_size_y)
     begin
         greenpipe1_on = 1'b1;
+        GP1_ra = greenpipe1_size_x*(DrawY-pipe1Y) + (DrawX-pipe1X);
+        ball_on = 1'b0;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
+    else if(DrawX >= pipe2X && DrawX < pipe2X + greenpipe2_size_x && 
+            DrawY >= pipe2Y && DrawY < pipe2Y + greenpipe2_size_y)
+    begin
+        greenpipe2_on = 1'b1;
+        GP1_ra = greenpipe2_size_x*(DrawY-pipe2Y) + (DrawX-pipe2X);
+        ball_on = 1'b0;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
+    else if(DrawX >= pipe3X && DrawX < pipe3X + greenpipe3_size_x && 
+            DrawY >= pipe3Y && DrawY < pipe3Y + greenpipe3_size_y)
+    begin
+        greenpipe3_on = 1'b1;
+        GP1_ra = greenpipe3_size_x*(DrawY-pipe3Y) + (DrawX-pipe3X);
         ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
@@ -231,60 +285,60 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
     end
-    else if (DrawX >= CLOUD1_x && DrawX < CLOUD1_x + CLOUD1_size &&
-            DrawY >= CLOUD1_y && DrawY < CLOUD1_y + CLOUD1_size)
+    else if (DrawX >= cloud1X && DrawX < cloud1X + CLOUD1_size &&
+            DrawY >= cloud1Y && DrawY < cloud1Y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         CLOUD1_on = 1'b1;
-        CLOUD_ra = CLOUD1_size*(DrawY-CLOUD1_y) + (DrawX-CLOUD1_x);
+        CLOUD_ra = CLOUD1_size*(DrawY-cloud1Y) + (DrawX-cloud1X);
     end
-        else if (DrawX >= CLOUD2_x && DrawX < CLOUD2_x + CLOUD1_size &&
-            DrawY >= CLOUD2_y && DrawY < CLOUD2_y + CLOUD1_size)
+        else if (DrawX >= cloud2X && DrawX < cloud2X + CLOUD1_size &&
+            DrawY >= cloud2Y && DrawY < cloud2Y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         CLOUD2_on = 1'b1;
-        CLOUD_ra = CLOUD1_size*(DrawY-CLOUD2_y) + (DrawX-CLOUD2_x);
+        CLOUD_ra = CLOUD1_size*(DrawY-cloud2Y) + (DrawX-cloud2X);
     end
-        else if (DrawX >= CLOUD3_x && DrawX < CLOUD3_x + CLOUD1_size &&
-            DrawY >= CLOUD3_y && DrawY < CLOUD3_y + CLOUD1_size)
+        else if (DrawX >= cloud3X && DrawX < cloud3X + CLOUD1_size &&
+            DrawY >= cloud3Y && DrawY < cloud3Y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         CLOUD3_on = 1'b1;
-        CLOUD_ra = CLOUD1_size*(DrawY-CLOUD3_y) + (DrawX-CLOUD3_x);
+        CLOUD_ra = CLOUD1_size*(DrawY-cloud3Y) + (DrawX-cloud3X);
     end
-        else if (DrawX >= CLOUD4_x && DrawX < CLOUD4_x + CLOUD1_size &&
-            DrawY >= CLOUD4_y && DrawY < CLOUD4_y + CLOUD1_size)
+        else if (DrawX >= cloud4X && DrawX < cloud4X + CLOUD1_size &&
+            DrawY >= cloud4Y && DrawY < cloud4Y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         CLOUD4_on = 1'b1;
-        CLOUD_ra = CLOUD1_size*(DrawY-CLOUD4_y) + (DrawX-CLOUD4_x);
+        CLOUD_ra = CLOUD1_size*(DrawY-cloud4Y) + (DrawX-cloud4X);
     end
-        else if (DrawX >= CLOUD5_x && DrawX < CLOUD5_x + CLOUD1_size &&
-            DrawY >= CLOUD5_y && DrawY < CLOUD5_y + CLOUD1_size)
+        else if (DrawX >= cloud5X && DrawX < cloud5X + CLOUD1_size &&
+            DrawY >= cloud5Y && DrawY < cloud5Y + CLOUD1_size)
     begin
         greenpipe1_on = 1'b0;
-        ball_on = 1'b1;
+        ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
         CLOUD5_on = 1'b1;
-        CLOUD_ra = CLOUD5_size*(DrawY-CLOUD5_y) + (DrawX-CLOUD5_x);
+        CLOUD_ra = CLOUD1_size*(DrawY-cloud5Y) + (DrawX-cloud5X);
     end
     else if (DrawX >= HEART1_x && DrawX < HEART1_x + HEART1_size_x &&
             DrawY >= HEART1_y && DrawY < HEART1_y + HEART1_size_y)
@@ -431,6 +485,18 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[FP_data_out][15:8];
             Blue = PALETTE[FP_data_out][7:0];
         end
+        else if ((ball_on == 1'b1) && (FP_data_out != 1) && (greenpipe2_on == 1'b1)) 
+        begin 
+            Red = PALETTE[FP_data_out][24:16];
+            Green = PALETTE[FP_data_out][15:8];
+            Blue = PALETTE[FP_data_out][7:0];
+        end
+        else if ((ball_on == 1'b1) && (FP_data_out != 1) && (greenpipe3_on == 1'b1)) 
+        begin 
+            Red = PALETTE[FP_data_out][24:16];
+            Green = PALETTE[FP_data_out][15:8];
+            Blue = PALETTE[FP_data_out][7:0];
+        end
         else if ((ball_on == 1'b1) && FP_data_out != 1) 
         begin
             Red = PALETTE[FP_data_out][24:16];
@@ -467,11 +533,29 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[CLOUD_data_out][15:8];
             Blue = PALETTE[CLOUD_data_out][7:0];
         end
-        else if (greenpipe1_on == 1'b1 && GP1_data_out != 1)
+        else if ((greenpipe1_on == 1'b1) && GP1_data_out != 1)
         begin
             Red = PALETTE[GP1_data_out][24:16];
             Green = PALETTE[GP1_data_out][15:8];
             Blue = PALETTE[GP1_data_out][7:0];
+            // Red = 8'hAA;
+            // Green = 8'hAA;
+            // Blue = 8'hAA;
+        end
+        else if ((greenpipe2_on == 1'b1) && GP1_data_out != 1)
+        begin
+            Red =   PALETTE[GP1_data_out][24:16];
+            Green = PALETTE[GP1_data_out][15:8];
+            Blue =  PALETTE[GP1_data_out][7:0];
+            // Red = 8'hAA;
+            // Green = 8'hAA;
+            // Blue = 8'hAA;
+        end
+        else if ((greenpipe3_on == 1'b1) && GP1_data_out != 1)
+        begin
+            Red =   PALETTE[GP1_data_out][24:16];
+            Green = PALETTE[GP1_data_out][15:8];
+            Blue =  PALETTE[GP1_data_out][7:0];
             // Red = 8'hAA;
             // Green = 8'hAA;
             // Blue = 8'hAA;
@@ -587,8 +671,12 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
          end
         case(state)
         3'b000: begin //3 lives and no collisions
-            if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
-                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
+            if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+                (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+            ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+                (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+            ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))
             begin
                 state_n = 3'b001;
             end
@@ -597,7 +685,10 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b001: begin //lost first life and middle of collision
-            if(BallX > (greenpipe1_x + greenpipe1_size_x))begin
+            if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
+            ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
+            (BallX > (pipe3X + greenpipe1_size_x)))
+            begin
                 state_n = 3'b010;
             end
             else begin
@@ -605,17 +696,24 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b010: begin //2 lives and no collisions
-            if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
-                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
+            if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+                (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+            ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+                (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+            ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))
             begin
                 state_n = 3'b011;
             end
             else begin
-                state_n = 3'b011;
+                state_n = 3'b010;
             end
         end
         3'b011: begin //lost second life and middle of collision
-            if(BallX > (greenpipe1_x + greenpipe1_size_x))begin
+            if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
+            ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
+            (BallX > (pipe3X + greenpipe1_size_x)))
+            begin
                 state_n = 3'b100;
             end
             else begin
@@ -623,8 +721,12 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b100: begin //1 life and no collisions
-        if((BallX + 30) < (greenpipe1_x + greenpipe1_size_x) && (BallX + 30) > greenpipe1_x &&
-                (BallY + 30) < (greenpipe1_y + greenpipe1_size_y) && (BallY + 30) > greenpipe1_y)
+        if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+                (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+            ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+                (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+            ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))    
             begin
                 state_n = 3'b101;
             end

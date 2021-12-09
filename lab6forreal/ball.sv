@@ -121,7 +121,8 @@ module  ball ( input Reset, frame_clk,
 					  Ball_Y_Motion_Next = 0;  // 2's complement.
 					  
 				 else if ( (Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
-					  Ball_Y_Motion_Next = Ball_Y_Step;
+					//   Ball_Y_Motion_Next = Ball_Y_Step;
+					Ball_Y_Motion_Next = 3;
 					  
 				  else if ( (Ball_X_Pos + Ball_Size) >= Ball_X_Max )  // Ball is at the Right edge, BOUNCE!
 					  Ball_X_Motion_Next = (~ (Ball_X_Step) + 1'b1);  // 2's complement.
@@ -165,7 +166,7 @@ module  ball ( input Reset, frame_clk,
 							Ball_Y_Motion_Next = 0;
 							end
 							else begin
-							Ball_Y_Motion_Next = 1;//S
+							Ball_Y_Motion_Next = 3;//S
 							  Ball_X_Motion_Next = 0;	
 							end
 					        
