@@ -113,6 +113,53 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [10:0] SCORE9_size_x = 8 *4;
     logic [10:0] SCORE9_size_y = 16*4;
 
+    // logic for the GAME OVER sign
+    logic GO1_on;
+    logic [10:0] GO1_x = 426;
+    logic [10:0] GO1_y = 220;
+    logic [10:0] GO1_size_x = 8 * 4 ;
+    logic [10:0] GO1_size_y = 16 * 4;
+    logic GO2_on;
+    logic [10:0] GO2_x = 394;
+    logic [10:0] GO2_y = 220;
+    logic [10:0] GO2_size_x = 8 *4;
+    logic [10:0] GO2_size_y = 16*4;
+    logic GO3_on;
+    logic [10:0] GO3_x = 362;
+    logic [10:0] GO3_y = 220;
+    logic [10:0] GO3_size_x = 8 *4;
+    logic [10:0] GO3_size_y = 16*4;
+    logic GO4_on;
+    logic [10:0] GO4_x = 330;
+    logic [10:0] GO4_y = 220;
+    logic [10:0] GO4_size_x = 8 *4;
+    logic [10:0] GO4_size_y = 16*4;
+    logic GO5_on;
+    logic [10:0] GO5_x = 298;
+    logic [10:0] GO5_y = 220;
+    logic [10:0] GO5_size_x = 8 *4;
+    logic [10:0] GO5_size_y = 16*4;
+    logic GO6_on;
+    logic [10:0] GO6_x = 266;
+    logic [10:0] GO6_y = 220;
+    logic [10:0] GO6_size_x = 8 *4;
+    logic [10:0] GO6_size_y = 16*4;
+    logic GO7_on;
+    logic [10:0] GO7_x = 234;
+    logic [10:0] GO7_y = 220;
+    logic [10:0] GO7_size_x = 8 *4;
+    logic [10:0] GO7_size_y = 16*4;
+    logic GO8_on;
+    logic [10:0] GO8_x = 202;
+    logic [10:0] GO8_y = 220;
+    logic [10:0] GO8_size_x = 8 *4;
+    logic [10:0] GO8_size_y = 16*4;
+    logic GO9_on;
+    logic [10:0] GO9_x = 170;
+    logic [10:0] GO9_y = 220;
+    logic [10:0] GO9_size_x = 8 *4;
+    logic [10:0] GO9_size_y = 16*4;
+
     logic [31:0] PALETTE [8];
     assign PALETTE[0] = 32'h00FF44;
     assign PALETTE[1] = 32'hFFDDEE;
@@ -202,6 +249,15 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     SCORE7_on = 0;
     SCORE8_on = 0;
     SCORE9_on = 0;
+    GO1_on = 0;
+    GO2_on = 0;
+    GO3_on = 0;
+    GO4_on = 0;
+    GO5_on = 0;
+    GO6_on = 0;
+    GO7_on = 0;
+    GO8_on = 0;
+    GO9_on = 0;
     CLOUD1_on = 0;
     CLOUD2_on = 0;
     CLOUD3_on = 0;
@@ -210,7 +266,61 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     greenpipe1_on = 0;
     greenpipe2_on = 0;
     greenpipe3_on = 0;
-    if (DrawX >= pipe1X && DrawX < pipe1X + greenpipe1_size_x && 
+    if (!HEART3_intact && DrawX >= GO1_x && DrawX < GO1_x + GO1_size_x &&
+            DrawY >= GO1_y && DrawY < GO1_y + GO1_size_y)
+    begin
+        GO1_on = 1'b1;
+        SCORE_ra = (((DrawY-GO1_y)/4)%16) + 16*(8'h52);
+    end
+    if (!HEART3_intact && DrawX >= GO2_x && DrawX < GO2_x + GO2_size_x &&
+            DrawY >= GO2_y && DrawY < GO2_y + GO2_size_y)
+    begin
+        GO2_on = 1'b1;
+        SCORE_ra = (((DrawY-GO2_y)/4)%16) + 16*(8'h45);
+    end
+    if (!HEART3_intact && DrawX >= GO3_x && DrawX < GO3_x + GO3_size_x &&
+            DrawY >= GO3_y && DrawY < GO3_y + GO3_size_y)
+    begin
+        GO3_on = 1'b1;
+        SCORE_ra = (((DrawY-GO3_y)/4)%16) + 16*(8'h56);
+    end
+    if (!HEART3_intact && DrawX >= GO4_x && DrawX < GO4_x + GO4_size_x &&
+            DrawY >= GO4_y && DrawY < GO4_y + GO4_size_y)
+    begin
+        GO4_on = 1'b1;
+        SCORE_ra = (((DrawY-GO4_y)/4)%16) + 16*(8'h4f);
+    end
+    if (!HEART3_intact && DrawX >= GO5_x && DrawX < GO5_x + GO5_size_x &&
+            DrawY >= GO5_y && DrawY < GO5_y + GO5_size_y)
+    begin
+        GO5_on = 1'b1;
+        SCORE_ra = (((DrawY-GO5_y)/4)%16);
+    end
+    if (!HEART3_intact && DrawX >= GO6_x && DrawX < GO6_x + GO6_size_x &&
+            DrawY >= GO6_y && DrawY < GO6_y + GO6_size_y)
+    begin
+        GO6_on = 1'b1;
+        SCORE_ra = (((DrawY-GO6_y)/4)%16) + 16*(8'h45);
+    end
+    if (!HEART3_intact && DrawX >= GO7_x && DrawX < GO7_x + GO7_size_x &&
+            DrawY >= GO7_y && DrawY < GO7_y + GO7_size_y)
+    begin
+        GO7_on = 1'b1;
+        SCORE_ra = (((DrawY-GO7_y)/4)%16) + 16*(8'h4d);
+    end
+    if (!HEART3_intact && DrawX >= GO8_x && DrawX < GO8_x + GO8_size_x &&
+            DrawY >= GO8_y && DrawY < GO8_y + GO1_size_y)
+    begin
+        GO8_on = 1'b1;
+        SCORE_ra = (((DrawY-GO8_y)/4)%16) + 16*(8'h41);
+    end
+    if (!HEART3_intact && DrawX >= GO9_x && DrawX < GO9_x + GO9_size_x &&
+            DrawY >= GO9_y && DrawY < GO9_y + GO9_size_y)
+    begin
+        GO9_on = 1'b1;
+        SCORE_ra = (((DrawY-GO9_y)/4)%16) + 16*(8'h47);
+    end
+    else if (DrawX >= pipe1X && DrawX < pipe1X + greenpipe1_size_x && 
         DrawY >= pipe1Y && DrawY < pipe1Y + greenpipe1_size_y &&
         DrawX >= BallX && DrawX < BallX + Ball_size &&
             DrawY >= BallY && DrawY < BallY + Ball_size)
@@ -478,7 +588,123 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         //     Green = PALETTE[FP_data_out][15:8];
         //     Blue = PALETTE[FP_data_out][7:0];
         // end
-        
+        else if ((GO1_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO1_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO2_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO2_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO3_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO3_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO4_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO4_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO5_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO5_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO6_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO6_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO7_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO7_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO8_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO8_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
+        else if ((GO9_on == 1'b1)) 
+        begin 
+            if( SCORE_data_out[7-((DrawX - GO9_x)/4)] != 0) begin
+                Red = PALETTE[1][24:16];
+                Green = PALETTE[1][15:8];
+                Blue = PALETTE[1][7:0];
+            end
+            else begin
+                Red = 8'hff; 
+                Green = 8'h00;
+                Blue = 8'h00;
+            end
+        end
         else if ((ball_on == 1'b1) && (FP_data_out != 1) && (greenpipe1_on == 1'b1)) 
         begin 
             Red = PALETTE[FP_data_out][24:16];
