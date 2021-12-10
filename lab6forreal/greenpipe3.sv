@@ -15,6 +15,7 @@
 
 module  greenpipe3 ( input Reset, frame_clk,
 					input [7:0] keycode,
+					input [26:0] score,
                output [9:0]  BallX, BallY, BallS );
     
     logic [9:0] Ball_X_Pos, Ball_X_Motion, Ball_Y_Pos, Ball_Y_Motion, Ball_Size;
@@ -22,7 +23,7 @@ module  greenpipe3 ( input Reset, frame_clk,
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    parameter [9:0] Ball_X_Center=550;  // Center position on the X axis
+    parameter [9:0] Ball_X_Center=530;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=380;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
@@ -117,20 +118,20 @@ module  greenpipe3 ( input Reset, frame_clk,
 			Ball_X_Motion_Next = Ball_X_Motion;
 			Ball_Y_Motion_Next = Ball_Y_Motion;
 			
-				 if ( (Ball_Y_Pos + Ball_Size) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
-					  Ball_Y_Motion_Next = 0;  // 2's complement.
+				//  if ( (Ball_Y_Pos + Ball_Size) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
+				// 	  Ball_Y_Motion_Next = 0;  // 2's complement.
 					  
-				 else if ( (Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
-					  Ball_Y_Motion_Next = Ball_Y_Step;
+				//  else if ( (Ball_Y_Pos - Ball_Size) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
+				// 	  Ball_Y_Motion_Next = Ball_Y_Step;
 					  
-				  else if ( (Ball_X_Pos + Ball_Size) >= Ball_X_Max )  // Ball is at the Right edge, BOUNCE!
-					  Ball_X_Motion_Next = (~ (Ball_X_Step) + 1'b1);  // 2's complement.
+				//   else if ( (Ball_X_Pos + Ball_Size) >= Ball_X_Max )  // Ball is at the Right edge, BOUNCE!
+				// 	  Ball_X_Motion_Next = (~ (Ball_X_Step) + 1'b1);  // 2's complement.
 					  
-				 else if ( (Ball_X_Pos - Ball_Size) <= Ball_X_Min )  // Ball is at the Left edge, BOUNCE!
-					  Ball_X_Motion_Next = Ball_X_Step;
+				//  else if ( (Ball_X_Pos - Ball_Size) <= Ball_X_Min )  // Ball is at the Left edge, BOUNCE!
+				// 	  Ball_X_Motion_Next = Ball_X_Step;
 					  
-				 else 
-					  Ball_Y_Motion_Next = Ball_Y_Motion;  // Ball is somewhere in the middle, don't bounce, just keep moving
+				//  else 
+				// 	  Ball_Y_Motion_Next = Ball_Y_Motion;  // Ball is somewhere in the middle, don't bounce, just keep moving
 					  
 				 
 				 case (keycode)
@@ -140,7 +141,7 @@ module  greenpipe3 ( input Reset, frame_clk,
 								// 	Ball_X_Motion_Next = Ball_X_Step;
 								// end
 								// else begin
-								Ball_X_Motion_Next = -1;//A
+								Ball_X_Motion_Next =  -1 - score/1000;//A
 								Ball_Y_Motion_Next= 0;
 								// end
 								
@@ -190,10 +191,14 @@ module  greenpipe3 ( input Reset, frame_clk,
 					// 	Ball_Y_Motion_Next = Ball_Y_Motion;
 					// end
 			   endcase
-
-			Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
-			Ball_X_Pos_Next = (Ball_X_Pos + Ball_X_Motion);
-			
+			if(Ball_X_Pos == 0) begin
+				Ball_X_Pos_Next = Ball_X_Max + 3*(score%100);
+				Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
+			end
+			else begin 
+				Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
+				Ball_X_Pos_Next = (Ball_X_Pos + Ball_X_Motion);
+			end
 				 
 				 
 

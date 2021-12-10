@@ -75,6 +75,7 @@ logic Reset_h, vssig, blank, sync, VGA_Clk;
     CLOUD5_x ,CLOUD5_y;
 	logic [7:0] Red, Blue, Green;
 	logic [7:0] keycode;
+	logic [26:0] score_num;
 
 //=======================================================
 //  Structural coding
@@ -189,15 +190,15 @@ color_mapper color0(.Clk(MAX10_CLK1_50), .Reset(Reset_h), .VGA_Clk(VGA_VS), .Bla
 							.cloud2X(CLOUD2_x), .cloud2Y(CLOUD2_y), 
 							.cloud3X(CLOUD3_x), .cloud3Y(CLOUD3_y), 
 							.cloud4X(CLOUD4_x), .cloud4Y(CLOUD4_y), 
-							.cloud5X(CLOUD5_x), .cloud5Y(CLOUD5_y) 
+							.cloud5X(CLOUD5_x), .cloud5Y(CLOUD5_y),  .score(score_num)
 							);
 
 greenpipe1 greenpipe1_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe1_x),
-    .BallY(greenpipe1_y), .BallS() );
+    .BallY(greenpipe1_y), .BallS(), .score(score_num));
 greenpipe2 greenpipe2_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe2_x),
-.BallY(greenpipe2_y), .BallS() );
+.BallY(greenpipe2_y), .BallS() , .score(score_num));
 greenpipe3 greenpipe3_0 (.Reset(Reset_h), .frame_clk(VGA_VS),.keycode(8'h04),.BallX(greenpipe3_x),
-.BallY(greenpipe3_y), .BallS() );
+.BallY(greenpipe3_y), .BallS() , .score(score_num));
 
 cloudMovements cloudMovements1(.Reset(Reset_h), .frame_clk(VGA_VS),
                .BallX(CLOUD1_x), .BallY(CLOUD1_y), .BallS(), .startX(x1), .startY(y1), .keycode(8'h04) );

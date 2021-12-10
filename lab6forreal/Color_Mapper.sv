@@ -22,7 +22,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 							cloud4X, cloud4Y, 
 							cloud5X, cloud5Y, 
                         input VGA_Clk, Blank, Clk, Reset,
-                       output logic [7:0]  Red, Green, Blue, eightOut, 
+                       output logic [7:0]  Red, Green, Blue, eightOut,
+                       output logic [26:0] score,
                        input [7:0] keycode );
     assign eightOut = SCORE_data_out;
     logic ball_on, CLOUD1_on, CLOUD2_on, CLOUD3_on, CLOUD4_on, CLOUD5_on;
@@ -225,7 +226,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     //         ball_on = 1'b0;
     //  end 
     logic [5:0] ascii;
-    logic [26:0] score, score_n;
+    logic [26:0] score_n;
     logic [19:0] counter, counter_n;
     logic HEART1_intact, HEART2_intact, HEART3_intact;
     always_comb begin:Ball_on_proc
