@@ -177,7 +177,7 @@ module  greenpipe1 ( input Reset, frame_clk,
 					// end
 			   endcase
 			if(Ball_X_Pos == 0) begin
-				Ball_X_Pos_Next = Ball_X_Max + 3*(score%100);
+				Ball_X_Pos_Next = Ball_X_Max + 2*(score%100);
 				Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
 			end
 			else begin 

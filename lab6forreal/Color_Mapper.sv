@@ -15,7 +15,7 @@
 
 module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size, pipe1X, pipe1Y,
                          pipe2X, pipe2Y,
-							pipe3X, pipe3Y,
+							pipe3X, pipe3Y, pipe4X, pipe4Y,
 							cloud1X, cloud1Y, 
 							cloud2X, cloud2Y, 
 							cloud3X, cloud3Y, 
@@ -47,6 +47,11 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
 
     logic [10:0] greenpipe3_size_x = 50;
     logic [10:0] greenpipe3_size_y = 100;
+    
+    logic greenpipe4_on;
+
+    logic [10:0] greenpipe4_size_x = 50;
+    logic [10:0] greenpipe4_size_y = 100;
 
 
 
@@ -228,7 +233,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     logic [5:0] ascii;
     logic [26:0] score_n;
     logic [19:0] counter, counter_n;
-    logic HEART1_intact, HEART2_intact, HEART3_intact;
+    logic HEART1_intact = 1'b1, HEART2_intact = 1'b1, HEART3_intact = 1'b1;
     always_comb begin:Ball_on_proc
     HEART_ra = 0;
     ascii = 8'h30;
@@ -267,6 +272,7 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     greenpipe1_on = 0;
     greenpipe2_on = 0;
     greenpipe3_on = 0;
+    greenpipe4_on = 0;
     if (!HEART3_intact && DrawX >= GO1_x && DrawX < GO1_x + GO1_size_x &&
             DrawY >= GO1_y && DrawY < GO1_y + GO1_size_y)
     begin
@@ -357,6 +363,18 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         HEART2_on = 1'b0;
         HEART3_on = 1'b0;
     end
+     else if (DrawX >= pipe4X && DrawX < pipe4X + greenpipe4_size_x && 
+        DrawY >= pipe4Y && DrawY < pipe4Y + greenpipe4_size_y &&
+        DrawX >= BallX && DrawX < BallX + Ball_size &&
+            DrawY >= BallY && DrawY < BallY + Ball_size)
+    begin
+        greenpipe4_on = 1'b1;
+        GP1_ra = greenpipe4_size_x*(DrawY-pipe4Y) + (DrawX-pipe4X);
+        ball_on = 1'b1;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
     else if(DrawX >= pipe1X && DrawX < pipe1X + greenpipe1_size_x && 
         DrawY >= pipe1Y && DrawY < pipe1Y + greenpipe1_size_y)
     begin
@@ -382,6 +400,16 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     begin
         greenpipe3_on = 1'b1;
         GP1_ra = greenpipe3_size_x*(DrawY-pipe3Y) + (DrawX-pipe3X);
+        ball_on = 1'b0;
+        HEART1_on = 1'b0;
+        HEART2_on = 1'b0;
+        HEART3_on = 1'b0;
+    end
+    else if(DrawX >= pipe4X && DrawX < pipe4X + greenpipe4_size_x && 
+            DrawY >= pipe4Y && DrawY < pipe4Y + greenpipe4_size_y)
+    begin
+        greenpipe4_on = 1'b1;
+        GP1_ra = greenpipe4_size_x*(DrawY-pipe4Y) + (DrawX-pipe4X);
         ball_on = 1'b0;
         HEART1_on = 1'b0;
         HEART2_on = 1'b0;
@@ -724,6 +752,12 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             Green = PALETTE[FP_data_out][15:8];
             Blue = PALETTE[FP_data_out][7:0];
         end
+        else if ((ball_on == 1'b1) && (FP_data_out != 1) && (greenpipe4_on == 1'b1)) 
+        begin 
+            Red = PALETTE[FP_data_out][24:16];
+            Green = PALETTE[FP_data_out][15:8];
+            Blue = PALETTE[FP_data_out][7:0];
+        end
         else if ((ball_on == 1'b1) && FP_data_out != 1) 
         begin
             Red = PALETTE[FP_data_out][24:16];
@@ -779,6 +813,15 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             // Blue = 8'hAA;
         end
         else if ((greenpipe3_on == 1'b1) && GP1_data_out != 1)
+        begin
+            Red =   PALETTE[GP1_data_out][24:16];
+            Green = PALETTE[GP1_data_out][15:8];
+            Blue =  PALETTE[GP1_data_out][7:0];
+            // Red = 8'hAA;
+            // Green = 8'hAA;
+            // Blue = 8'hAA;
+        end
+        else if ((greenpipe4_on == 1'b1) && GP1_data_out != 1)
         begin
             Red =   PALETTE[GP1_data_out][24:16];
             Green = PALETTE[GP1_data_out][15:8];
@@ -898,36 +941,44 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
     end 
 
     logic [3:0] state, state_n;
+	 
+    logic flag = 1'b0, flag_n = 1'b0;
     always_ff@(posedge Clk or posedge Reset) begin
          if(Reset)begin
             state <= 3'b000;
-				counter <= 0;
-				score <= 0;
-				end
+            counter <= 0;
+            score <= 0;
+            flag <= 0;
+            end
          else begin
             state <= state_n;
-				counter <= counter_n;
-				score <= score_n;
+            counter <= counter_n;
+            score <= score_n;
+            flag <= flag_n;
          end
          
     end
     always_comb begin
-        if(counter == 20'hfffff && BallY > 430 && HEART3_intact) begin
+	
+        if(counter == 20'hfffff && BallY > 430 && state < 5) begin
             score_n = score+1;
-				counter_n = 0;
-				end
+            counter_n = 0;
+            end
          else begin
 				score_n = score;
              counter_n = counter + 1;
          end
-        case(state)
+
+         case(state)
         3'b000: begin //3 lives and no collisions
             if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
                 (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
             ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
                 (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
             ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
-                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+            ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+                (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
             begin
                 state_n = 3'b001;
             end
@@ -936,23 +987,30 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b001: begin //lost first life and middle of collision
-            if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
-            ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
-            (BallX > (pipe3X + greenpipe1_size_x)))
-            begin
-                state_n = 3'b010;
-            end
-            else begin
-                state_n = 3'b001;
-            end
-        end
-        3'b010: begin //2 lives and no collisions
             if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
                 (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
             ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
                 (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
             ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
-                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+            ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+                (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
+            begin
+                state_n = 3'b001;
+            end
+            else begin
+                state_n = 3'b010;
+            end
+        end
+        3'b010: begin //2 lives and no collisions check if we have 2 lives
+           if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+                (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+            ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+                (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+            ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+            ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+                (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
             begin
                 state_n = 3'b011;
             end
@@ -961,23 +1019,30 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             end
         end
         3'b011: begin //lost second life and middle of collision
-            if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
-            ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
-            (BallX > (pipe3X + greenpipe1_size_x)))
-            begin
-                state_n = 3'b100;
-            end
-            else begin
-                state_n = 3'b011;
-            end
-        end
-        3'b100: begin //1 life and no collisions
-        if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+            if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
                 (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
             ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
                 (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
             ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
-                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))    
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+            ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+                (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
+            begin
+                state_n = 3'b011;
+            end
+            else begin
+                state_n = 3'b100;
+            end
+        end
+        3'b100: begin //1 life and no collisions
+            if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+                (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+            ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+                (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+            ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+                (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+            ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+                (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
             begin
                 state_n = 3'b101;
             end
@@ -991,7 +1056,8 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
         default: state_n = 3'b000;
         endcase
             
-        case(state)
+            
+         case(state)
         3'b000: begin //3 lives and no collisions
             HEART1_intact = 1'b1;
             HEART2_intact = 1'b1;
@@ -1028,6 +1094,117 @@ module  color_mapper ( input        [9:0] BallX, BallY, DrawX, DrawY, Ball_size,
             HEART3_intact = 1'b1;
         end
         endcase
+
+        // case(state)
+        // 3'b000: begin //3 lives and no collisions
+        //     if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+        //         (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+        //     ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+        //         (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+        //     ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+        //         (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y) ||
+        //     ((BallX + 30) < (pipe4X + greenpipe1_size_x) && (BallX + 30) > pipe4X &&
+        //         (BallY + 30) < (pipe4Y + greenpipe1_size_y) && (BallY + 30) > pipe4Y))
+        //     begin
+        //         state_n = 3'b001;
+        //     end
+        //     else begin
+        //         state_n = 3'b000;
+        //     end
+        // end
+        // 3'b001: begin //lost first life and middle of collision
+        //     if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
+        //     ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
+        //     (BallX > (pipe3X + greenpipe1_size_x)))
+        //     begin
+        //         state_n = 3'b010;
+        //     end
+        //     else begin
+        //         state_n = 3'b001;
+        //     end
+        // end
+        // 3'b010: begin //2 lives and no collisions
+        //     if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+        //         (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+        //     ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+        //         (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+        //     ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+        //         (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))
+        //     begin
+        //         state_n = 3'b011;
+        //     end
+        //     else begin
+        //         state_n = 3'b010;
+        //     end
+        // end
+        // 3'b011: begin //lost second life and middle of collision
+        //     if(((BallX > (pipe1X + greenpipe1_size_x)) & BallX < pipe2X) ||
+        //     ((BallX > (pipe2X + greenpipe1_size_x)) & BallX < pipe3X) ||
+        //     (BallX > (pipe3X + greenpipe1_size_x)))
+        //     begin
+        //         state_n = 3'b100;
+        //     end
+        //     else begin
+        //         state_n = 3'b011;
+        //     end
+        // end
+        // 3'b100: begin //1 life and no collisions
+        // if(((BallX + 30) < (pipe1X + greenpipe1_size_x) && (BallX + 30) > pipe1X &&
+        //         (BallY + 30) < (pipe1Y + greenpipe1_size_y) && (BallY + 30) > pipe1Y) ||
+        //     ((BallX + 30) < (pipe2X + greenpipe1_size_x) && (BallX + 30) > pipe2X &&
+        //         (BallY + 30) < (pipe2Y + greenpipe1_size_y) && (BallY + 30) > pipe2Y) ||
+        //     ((BallX + 30) < (pipe3X + greenpipe1_size_x) && (BallX + 30) > pipe3X &&
+        //         (BallY + 30) < (pipe3Y + greenpipe1_size_y) && (BallY + 30) > pipe3Y))    
+        //     begin
+        //         state_n = 3'b101;
+        //     end
+        //     else begin
+        //         state_n = 3'b100;
+        //     end
+        // end
+        // 3'b101: begin //no lives
+        //     state_n = 3'b101;
+        // end
+        // default: state_n = 3'b000;
+        // endcase
+            
+        // case(state)
+        // 3'b000: begin //3 lives and no collisions
+        //     HEART1_intact = 1'b1;
+        //     HEART2_intact = 1'b1;
+        //     HEART3_intact = 1'b1;
+        // end
+        // 3'b001: begin //lost first life and middle of collision
+        //     HEART1_intact = 1'b0;
+        //     HEART2_intact = 1'b1;
+        //     HEART3_intact = 1'b1;
+        // end
+        // 3'b010: begin //2 lives and no collisions
+        //     HEART1_intact = 1'b0;
+        //     HEART2_intact = 1'b1;
+        //     HEART3_intact = 1'b1;
+        // end
+        // 3'b011: begin //lost second life and middle of collision
+        //     HEART1_intact = 1'b0;
+        //     HEART2_intact = 1'b0;
+        //     HEART3_intact = 1'b1;
+        // end
+        // 3'b100: begin //1 life and no collisions
+        //     HEART1_intact = 1'b0;
+        //     HEART2_intact = 1'b0;
+        //     HEART3_intact = 1'b1;
+        // end
+        // 3'b101: begin //no lives
+        //     HEART1_intact = 1'b0;
+        //     HEART2_intact = 1'b0;
+        //     HEART3_intact = 1'b0;
+        // end
+        // default: begin
+        //     HEART1_intact = 1'b1;
+        //     HEART2_intact = 1'b1;
+        //     HEART3_intact = 1'b1;
+        // end
+        // endcase
 
     end 
     

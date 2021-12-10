@@ -166,7 +166,7 @@ module  ball ( input Reset, frame_clk,
 							Ball_Y_Motion_Next = 0;
 							end
 							else begin
-							Ball_Y_Motion_Next = 3;//S
+							Ball_Y_Motion_Next = 4;//S
 							  Ball_X_Motion_Next = 0;	
 							end
 					        
@@ -180,7 +180,7 @@ module  ball ( input Reset, frame_clk,
 							end
 							
 							else begin
-							Ball_Y_Motion_Next = -3;//W
+							Ball_Y_Motion_Next = -4;//W
 							  Ball_X_Motion_Next = 0;	
 							end
 					        

@@ -23,7 +23,7 @@ module  greenpipe3 ( input Reset, frame_clk,
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    parameter [9:0] Ball_X_Center=530;  // Center position on the X axis
+    parameter [9:0] Ball_X_Center=440;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=380;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
@@ -192,7 +192,7 @@ module  greenpipe3 ( input Reset, frame_clk,
 					// end
 			   endcase
 			if(Ball_X_Pos == 0) begin
-				Ball_X_Pos_Next = Ball_X_Max + 3*(score%100);
+				Ball_X_Pos_Next = Ball_X_Max + 2*(score%100);
 				Ball_Y_Pos_Next = (Ball_Y_Pos + Ball_Y_Motion);  // Update ball position
 			end
 			else begin 

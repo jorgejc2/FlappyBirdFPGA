@@ -1303,3 +1303,27 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 20:15:57.385
 !MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 20:46:56.951
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 20:46:59.084
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 20:52:41.038
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 20:52:43.213
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 21:01:58.460
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 21:02:00.591
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 22:24:36.344
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x8001170 --id=0x0 --timestamp=1634930745]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2021-12-09 22:24:38.379
+!MESSAGE Executing: [C:/intelfpga_lite/18.1/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x8001170 --id=0x0 --timestamp=1634930745 /cygdrive/c/Users/JorgeC/OneDrive/Documents/385Labs/Lab6Flappy/lab6forreal/software/usb_kb/usb_kb.elf]

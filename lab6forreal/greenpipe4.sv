@@ -13,7 +13,7 @@
 //-------------------------------------------------------------------------
 
 
-module  greenpipe2 ( input Reset, frame_clk,
+module  greenpipe4 ( input Reset, frame_clk,
 					input [7:0] keycode,
 					input [26:0] score,
                output [9:0]  BallX, BallY, BallS );
@@ -23,7 +23,7 @@ module  greenpipe2 ( input Reset, frame_clk,
 	//my logic >:)
 	logic [9:0] Ball_X_Pos_Next, Ball_Y_Pos_Next, Ball_X_Motion_Next, Ball_Y_Motion_Next;
 	 
-    parameter [9:0] Ball_X_Center=350;  // Center position on the X axis
+    parameter [9:0] Ball_X_Center=530;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=380;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
     parameter [9:0] Ball_X_Max=639;     // Rightmost point on the X axis
